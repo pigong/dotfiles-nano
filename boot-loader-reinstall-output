@@ -1,0 +1,40 @@
+Reading package lists...
+Building dependency tree...
+Reading state information...
+0 upgraded, 0 newly installed, 1 reinstalled, 0 to remove and 0 not upgraded.
+Need to get 0 B/119 MB of archives.
+After this operation, 0 B of additional disk space will be used.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 241995 files and directories currently installed.)
+Preparing to unpack .../nvidia-l4t-bootloader_36.4.7-20250918154033_arm64.deb ...
+Unpacking nvidia-l4t-bootloader (36.4.7-20250918154033) over (36.4.7-20250918154033) ...
+Setting up nvidia-l4t-bootloader (36.4.7-20250918154033) ...
+3767--0003--1--jetson-orin-nano-devkit-
+TNSPEC 3767-301-0003-F.1-1-1-jetson-orin-nano-devkit-
+COMPATIBLE_SPEC 3767--0003--1--jetson-orin-nano-devkit-
+TEGRA_BOOT_STORAGE nvme0n1
+TEGRA_CHIPID 0x23
+TEGRA_OTA_BOOT_DEVICE /dev/mtdblock0
+TEGRA_OTA_GPT_DEVICE /dev/mtdblock0
+Info: Write TegraPlatformCompatSpec with 3767--0003--1--jetson-orin-nano-devkit-.
+Info: The esp is already mounted to /boot/efi.
+INFO. Dump slots info:
+Current version: 36.4.7
+Capsule update status: 1
+Current bootloader slot: A
+Active bootloader slot: A
+num_slots: 2
+slot: 0,             status: normal
+slot: 1,             status: normal
+INFO. Dump nv_boot_control.conf:
+TNSPEC 3767-301-0003-F.1-1-1-jetson-orin-nano-devkit-
+COMPATIBLE_SPEC 3767--0003--1--jetson-orin-nano-devkit-
+TEGRA_BOOT_STORAGE nvme0n1
+TEGRA_CHIPID 0x23
+TEGRA_OTA_BOOT_DEVICE /dev/mtdblock0
+TEGRA_OTA_GPT_DEVICE /dev/mtdblock0
+Starting bootloader post-install procedure.
+INFO. Trigger Capsule update is done.
+INFO. Copy L4tlauncher to /boot/efi/EFI/BOOT/ done.
+Updating extlinux.conf...
+Root device is set in the extlinux.conf
+Reboot the target system for updates to take effect.

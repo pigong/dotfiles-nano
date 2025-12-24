@@ -1,6 +1,0 @@
-# return L4T-README
-sudo mount -o loop /opt/nvidia/l4t-usb-device-mode/filesystem.img /media/$USER/L4T-README
-
-# log into wifi from shell
-sudo nmcli device wifi connect 'SSID' password 'PASSWORD'
-
