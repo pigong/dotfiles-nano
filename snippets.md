@@ -115,3 +115,17 @@ sudo update-initramfs -u
 The parameter `-u` favors updating/adding the new configuration setting
 over recreating the initramfs from scratch.
 
+## Modify settings for ethernet or serial over USB
+
+The configurationn file is:
+
+```
+cat /opt/nvidia/l4t-usb-device-mode/nv-l4t-usb-device-mode-config.sh
+```
+
+The settings are intuitive. A likely good change would be to disable the rndis
+protocol, as it is only needed for older Winndows computers. And: if a computer
+needs to connect to multiple Jetsons, the static IP (default 192.168.55.1) on
+each Jetson must set to differ from the other. One may also chose to make the
+dhcp-server to provide different IPs to each client.
+
