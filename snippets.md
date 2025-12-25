@@ -79,4 +79,39 @@ In /dev/disk/by-uuid only disk
 
 is listed.
 
+## Regenerate font cache
+
+Copy fonts to .../share/fonts/.... Then:
+
+```
+sudo fc-cache -f -v
+```
+## See dbus notifications
+
+Probably only works on systems using X11 (tried on Lubuntu 22.04)
+
+```
+dbus-monitor "interface='org.freedesktop.Notifications'" | grep --line-buffered "string"
+```
+
+## Install oh-my-bash
+
+```
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh)"
+```
+
+## Update initramfs after blacklisting kernel moduld
+
+Example: rndis_host (Ubuntu 22.04, MS-protocol for ethernet over USB)
+
+```
+sudoedit /etc/modprobe.d/blacklist-rndis.conf
+```
+Insert `blacklist rndis_host`
+
+```
+sudo update-initramfs -u
+```
+The parameter `-u` favors updating/adding the new configuration setting
+over recreating the initramfs from scratch.
 
